@@ -7,6 +7,8 @@
     <title>Minhas Músicas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="icon" href="./imagens/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -15,8 +17,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-md-7 py-4">
-                        <h4>Sobre mim...</h4>
-                        <p class="text-body-secondary">A música sempre está presente no meu cotidiano.</p>
+                        <h4>Sobre...</h4>
+                        <p class="text-body-secondary">Com recomendações das músicas mais ouvidas da semana, podemos compartilhar gostos e descobrir culturas, ampliado e criando novas conexões.</p>
                     </div>
                     <div class="col-sm-4 offset-md-1 py-4">
                         <h4>Contato</h4>
@@ -29,9 +31,9 @@
             </div>
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container"> <a href="#" class="navbar-brand d-flex align-items-center"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-vinyl" viewBox="0 0 16 16">
+            <div class="container"> <a href="file://wsl.localhost/Ubuntu/home/brendavvpp/trab-final/trabalho-tf-idweb2025/index.html?#" class="navbar-brand d-flex align-items-center"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-vinyl mx-2" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                         <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4M4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0" />
                         <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
@@ -41,21 +43,30 @@
                 </button> </div>
         </div>
     </header>
-    <main>
+    <main class="bg-gradient">
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Playlists mais ouvidas</h1>
-                    <p class="lead text-body-secondary">Abaixo você encontra as playlists mais ouvidas da semana.
+                    <h1 class="fw-light">Álbuns mais ouvidos</h1>
+                    <p class="lead text-body-secondary">Abaixo você encontra os álbuns mais ouvidos da semana.
                         Acesse-as e descubra novas lendas da música.</p>
-                    <p> <a href="#" class="btn btn-primary my-2">Main call to action</a> <a href="#"
-                            class="btn btn-secondary my-2">Secondary action</a> </p>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Procure uma música..." aria-label="Search" />
+                        <button type="submit" class="btn btn-outline-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 20">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0">
+                                </path>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
-        <section class="py-5 text-center container">
+        <section class="py-5 text-center container border-top">
             <div class="row py-lg-5">
-                <div class="col">
+                <div class="col pb-5 d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
                         <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg"
                             class="card-img-top" alt="Chromakopia Cover">
@@ -67,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col pb-5 d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
                         <img src="https://upload.wikimedia.org/wikipedia/pt/7/72/Legi%C3%A3o_Urbana_-_Dois.jpg"
                             class="card-img-top" alt="Dois Cover">
@@ -79,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col pb-5 d-flex justify-content-center">
                     <div class="card" style="width: 18rem;">
                         <img src="https://upload.wikimedia.org/wikipedia/pt/2/20/Damn.-Kendrick_Lamar.jpg"
                             class="card-img-top" alt="Damn Cover">
@@ -96,7 +107,7 @@
     </main>
     <footer class="text-body-secondary py-5 text-bg-dark" data-bs-theme="dark">
         <div class="container">
-            <p class="float-end mb-1"> <a href="#">Início</a> </p>
+            <p class="float-end mb-1"> <a class="link text-white" href="file://wsl.localhost/Ubuntu/home/brendavvpp/trab-final/trabalho-tf-idweb2025/index.html?#">Início</a> </p>
             <p class="mb-1">Desenvolvido por Brenda Vivan Pastre</p>
         </div>
     </footer>
